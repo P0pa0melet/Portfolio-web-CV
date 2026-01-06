@@ -1,0 +1,115 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    height:  120vh;
+    background-image: url("image/yamongus.png") ;
+
+}
+
+.navbar{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    gap: 20px;
+}    
+
+
+.maintitle{
+    text-align: center;
+    margin-top: 50vh;
+
+}
+
+
+
+a{
+    color :rgb(161, 209, 209);
+    text-decoration: none;
+}
+
+
+p {
+    color: red;
+    font-family: fantasy;
+    font-size: 50px;
+    box-shadow: 2px, 3px, 8px, rgba(43, 5, 5, 0.427);
+
+
+}
+
+#premiere_partie{
+    color: aqua;
+    font-weight: bold;
+
+}
+
+h1{
+    background-color: rgba(255, 50, 255, 0.8);
+    color: aliceblue;
+    padding: 20px;
+    font-size: 100px;
+    text-align: center;
+    width: 50%;
+    margin: auto; /* margin c 4 margin : top botm, left right! Attention! on ecrite margin top apres margin auro, css ecrase la precedeante instruction!*/
+    border-radius: 20px;
+    margin-top: 50px;
+
+
+}
+
+/* commentaire!! :D */
+
+img{
+    padding: 50px;
+    border: 50px solid black;
+    margin: auto;
+}
+
+.vert_text{
+    color: chartreuse;
+    font-size: 80px;
+
+}
+
+#espace{
+letter-spacing: 5px;
+
+}
+
+.sous-titre{
+    margin-top: 1em;
+
+}
+
+.card{
+    margin : none;
+    padding: none;
+    width: 20%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    background-color: aquamarine;
+    border: 3px solid rgba(255, 50, 255, 0.8) ;
+
+}
+
+.pangolin{
+    width: 200px;
+    border: none;
+    padding: none;
+    margin: none;
+
+}
+
+.cards-container{
+    display: flex;
+    justify-content: space-around;
+}
