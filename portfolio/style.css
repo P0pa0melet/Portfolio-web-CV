@@ -36,6 +36,10 @@ body{
     background-size: 100%;
 }
 
+button{
+    background-color: transparent;
+    padding: 1vh;
+}
 
 /* HTML Page */
     /* HEADER // PREMIERE PARTIE */
@@ -57,14 +61,16 @@ header{
 }
 
 .presentation{
+    position: inherit;
     display: flex;
     align-items: center;
-    margin-left: 15px;
+    left: 20px ;
     padding: 0.5em;
 }
 
 .navbar{
-    float: right;
+    position: inherit;
+    right: 20px ;
     padding: 0.5em;
     margin-right: 15px;
     gap: 20px;
@@ -100,11 +106,15 @@ header{
 
 }
 
+#presentation-yuzu:hover{
+    transform: scale(1.1);
+}
+
 /*BODY // DEUXIEME PARTIE */
 
 .card{
     margin : none;
-    padding: none;
+    padding: 1vh;
     width: 20%;
     display: flex;
     flex-direction: column ;

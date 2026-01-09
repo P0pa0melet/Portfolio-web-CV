@@ -213,3 +213,13 @@ form.addEventListener("submit", function(){
 
     }
 }) 
+
+
+const element = document.querySelector('presentation-yuzu');
+let deplacement = 20;
+element.style.left = '0px';
+
+document.getElementById('bouton').addEventListener('click', () => {
+  const currentLeft = parseInt(element.style.left, 10);
+  element.style.left = (currentLeft + deplacement) + 'px';
+});
