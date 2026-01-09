@@ -1,0 +1,274 @@
+/* General balise  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive ;
+    color: rgb(211, 250, 217) ;
+    transition: 0.2s;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    gap : 1em;
+}
+
+li{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 10vh;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+body{
+    background-image: url("image/background_galaxy.png") ;
+    background-repeat : no-repeat;
+    background-size: 100%;
+}
+
+button{
+    background-color: transparent;
+    padding: 1vh;
+}
+
+/* HTML Page */
+    /* HEADER // PREMIERE PARTIE */
+
+header{
+    height:  100vh;
+    /* filter: grayscale(100%); */
+}
+
+.haut-page {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 24px;
+    margin : 10px;
+    
+
+}
+
+.presentation{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    left: 20px ;
+    padding: 0.5em;
+}
+
+.navbar{
+    display: flex;
+    right: 0;
+    padding: 0.5em;
+    gap: 3em;
+}    
+
+#logo-pitu{
+    width: 8vh;
+}
+
+.milieux-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.maintitle{
+    margin-top: 20vh;
+    margin-left: 25vh;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10vh;
+
+}
+
+
+#presentation-yuzu{
+    width: 55vh;
+    margin-right: 25vh;
+    animation: zoomInZoomOut 6s infinite;   
+}
+
+.animationLinear{
+    animation-timing-function : linear;
+}
+
+#presentation-yuzu:hover{
+    transform: scale(1.1);
+}
+
+/*BODY // DEUXIEME PARTIE */
+
+.card{
+    margin : 2vh;
+    padding: 1vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    gap: 2vh;
+}
+
+.sous-titre-card{
+    margin-top: 0.3em;
+    font-size: 3em;
+    color: rgb(85, 192, 101);
+    margin-bottom: 0.3em;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    padding: none;
+    margin: none;
+
+}
+
+
+#card1, #card3{
+    position: left ;
+
+}
+
+#card2{
+    align-self: flex-end;
+}
+/* CLASS GENERIQUE*/
+
+.espace{
+letter-spacing: 10px;
+
+}
+
+.sous-titre{
+    margin-top: 1em;
+    font-size: 3vh;
+    color: rgb(85, 192, 101);
+}
+
+.background-white{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.border-green{
+    border: 3px solid rgb(94, 255, 0);
+    border-radius : 1vh;
+}
+
+.text-blue p{
+    color: brown;
+}
+
+.text-yellow{
+    color: yellowgreen;
+}
+
+
+.vert_text{
+    color: rgb(32, 179, 54);
+    font-size: 80px;
+
+}
+
+/* on peut faire double class preciser le css en metan un point netrele nom des deux classe
+avec un espace on dit ce qui est class text-blue, que les paragraphe. */
+
+
+
+
+.error {
+    font-size: 50px;
+    color: red;
+    
+}
+
+.invis {
+    /*visibility: hidden;*/ /* peu pratique car il est considérer comme un object alors que pas visible */
+    display: none;
+}
+
+/*ANIMATION BASIQUE*/
+
+@keyframes wheelHueColor {
+    from, to  { color: rgb(211, 250, 217); }
+    1%       { color: hsl(324, 58%, 64%); }
+    10%      { color: hsl(0, 57%, 61%); }
+    20%      { color: hsl(36, 66%, 57%); }
+    30%      { color: hsl(72, 44%, 57%); }
+    40%      { color: hsl(108, 51%, 54%); }
+    50%      { color: hsl(144, 53%, 51%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 58%, 57%); }
+    80%      { color: hsl(252, 59%, 61%); }
+    90%      { color: hsl(288, 54%, 58%); }
+}
+
+.rainbow:hover {
+    transform: scale(1.2);
+    animation: wheelHueColor 20s infinite;
+}
+
+@keyframes wheelHueColorBorder {
+    from, to  { border-color: rgb(94, 255, 0); }
+    5%       { border-color: hsl(324, 58%, 64%); }
+    10%      { border-color: hsl(0, 57%, 61%); }
+    20%      { border-color: hsl(36, 66%, 57%); }
+    30%      { border-color: hsl(72, 44%, 57%); }
+    40%      { border-color: hsl(108, 51%, 54%); }
+    50%      { border-color: hsl(144, 53%, 51%); }
+    60%      { border-color: hsl(180, 75%, 35%); }
+    70%      { border-color: hsl(216, 58%, 57%); }
+    80%      { border-color: hsl(252, 59%, 61%); }
+    90%      { border-color: hsl(288, 54%, 58%); }
+}
+
+.rainbow-border:hover {
+    transform: scale(1.1);
+    animation: wheelHueColorBorder 20s infinite;
+}
+
+@keyframes moveDodge {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(100px); }
+  50% { transform: translateX(-100px); }
+  100% { transform: translateX(0); }
+}
+
+
+@keyframes spinRoundRound {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes zoomInZoomOut {
+    0%{transform: scale(1) ;}
+    50%{transform: scale(1.15);}
+    100%{transform: scale(1) ;}
+}
