@@ -1,0 +1,133 @@
+<!-- Site HTML codé par Eline tronelle, Projet de html à l'IIM
+
+Last Update 2026/01/19
+
+Probleme de taille de police probablement due à mes nombe=reuse hover et translate dans le css. Épineux de démélé tout ça D:
+-->
+
+<html>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact me - Eline Tronelle's CV</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+
+    <body>
+
+        <header id="top">
+
+            <section class="haut-page">
+                <div class="presentation">
+                    <img class="logo-pitu potentialFun"  src="image/yuzu_uno.png"  title="Presented by Yuzu" alt="Logo :3">
+                    <p class="potentialFun">Capitain Omelet Scrambled</p>
+                </div>
+
+                <nav class="navbar">
+                    <a href="index.html"  class="rainbow">Meet me</a>
+                    <a href="contact.html"  class="rainbow">Contact me</a>
+                    <button id="spinBtn" class="potentialFun">Mode <span class="be-rainbow">F U N</span></button>
+                    <button id="playBtn" class="potentialFun">Mode <span class="be-rainbow"> M U S I C</span></button>                
+                    <audio id="music">
+                        <source src="music/corrupted-music.mp3" type="audio/mp3">
+                    </audio>
+                </nav>
+                <script src="main.js" defer></script>
+            </section>
+
+        </header>
+
+
+
+        <section class="contact-me">
+
+            <div class="informations border-green rainbow-border background-white potentialFun">
+                <h2 class="middle sous-titre-card espace middle">Contact Information</h2>
+                <p class="middle marge">Please, feel free to contact me at this email adress! :</p>
+                <p class="be-rainbow middle big">eline.tronelle@edu.devinci.fr</p>
+                
+            </div>
+
+
+            <section class="formulaire border-green rainbow-border background-white">
+                <h2 class="marge">Formulaire de contact</h2>
+                <form action="">
+
+                    <label for="nameGive">Family name :</label>
+                    <input class="dark-green potentialFun" id="nameGive" type="text" placeholder="Ex. Ketchum ">
+
+                    <p id="first-name-error" class="error invis middle">Entry is incorrect</p>
+
+
+
+                    <label for="familyGive">Name :</label>
+                    <input class="dark-green potentialFun" id="familyGive" type="text" placeholder="Ex. Ash ">
+                        
+                    <p id="family-error" class="error invis middle">Entry is incorrect.</p>
+                
+
+
+                    <label for="email">Email :</label>
+                    <input class="potentialFun" id="email" type="email" placeholder="Ex. ash.ketchum@ac-nantes.fr">
+
+                    <label for="messageGive">Message :</label>
+                    <input class="dark-green potentialFun" id="messageGive" type="text" placeholder="Ex. One day, I'll be the best pokemon hunter! ">
+                        
+                    <p id="messageError" class="error invis middle">Entry is incorrect, it must contain at least 10 caracters</p>
+
+
+
+                    <input class="dark-green"  type="submit" value="Envoyer">
+                    <p id="validation" class="be-rainbow invis middle">Message send without issue! thank you for contacting me :D</p>
+
+
+
+                </form>
+            </section>
+
+            <script src="main.js"></script>
+        </section>
+
+
+        <footer>
+
+            <section class="top-part">
+                <section class="presentation">
+                    <img class="logo-pitu potentialFun"  src="image/yuzu-yupitu-face.png"  title="Presented by Yuzu" alt="Logo :3">
+                    <div>
+                        <h2>Eline Tronelle</h2>
+                        <p>Un étudiant plein d'avenir!</p>
+                    </div>
+
+                </section>
+
+                <section class="links">
+                    <div>
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="index.html">Meet me :D</li>
+                            <li><a href="https://www.linkedin.com/in/eline-tronelle-677b29385/" class="marge middle" target="_blank">LinkedIn account here :D</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+            </section>
+
+            <p class="line marge potentialFun"></p>
+
+            <p>© 2026 Captain-Omelet-Scrambled. All rights reserved.</p>
+
+
+        </footer>
+
+
+    </body>
+</html>
+
+

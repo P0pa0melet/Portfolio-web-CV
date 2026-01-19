@@ -1,0 +1,551 @@
+/* Stylesheet faite par Eline Tronelle pour les deux page html : index.html / contact.html
+
+Last update 2026/01/19*/
+
+
+/* ----------------------------General balise ---------------------------------- */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: rgb(211, 250, 217) ;
+    transition: 0.2s;
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    gap : 1rem;
+}
+
+li{
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 6rem;
+    text-align: left;
+    margin-top: 20px;
+}
+
+
+body{
+    background-image: url("image/background_galaxy.png") ;
+    background-repeat : no-repeat;
+    background-size: 100%;
+}
+
+button{
+    background-color: transparent;
+    padding: 1vh;
+}
+
+
+header{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.322);
+}
+
+
+/* ---------------------------------- HEADER // PREMIERE PARTIE --------------------------- */
+
+.haut-page {
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin : 2vw;
+    margin-top : 0;
+}
+
+.presentation{
+    position: inherit;
+    display: flex;
+    align-items: center;
+    gap : 0.5vw ;
+    left: 20px ;
+    padding: 0.5rem;
+}
+
+.navbar{
+    display: flex;
+    right: 0;
+    padding: 0.5rem;
+    gap: 3rem;
+
+}    
+
+.logo-pitu{
+    width: 8vh;
+}
+
+.milieux-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.maintitle{
+    margin-top: 15vh;
+    margin-left: 25vh;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15vh;
+
+}
+
+
+#presentation-yuzu{
+    width: 55vh;
+    margin-right: 25vh;
+    animation: zoomInZoomOut 6s infinite;   
+}
+
+
+
+/*------------------------------------- BODY // DEUXIEME PARTIE // CARD SKILL ------------------------------- */
+
+.card{
+    margin : 8vh;
+    margin-top : 2vh ;
+    margin-bottom : 0 ;
+    padding: 1vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    gap: 2vh;
+}
+
+.sous-titre-card{
+    margin-top: 0.3rem;
+    font-size: calc(1.3vw + 1.3vh + 1vmin);
+    color: rgb(85, 192, 101);
+    margin-bottom: 0.3rem;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+    padding: none;
+    margin: none;
+
+}
+
+
+#card1, #card3{
+    position: left ;
+    animation: slideRight 40s ease-in-out infinite;
+
+}
+
+#card2{
+    align-self: flex-end;
+    animation: slideLeft 40s ease-in-out infinite;
+}
+
+
+.butn-learn{
+    margin-top: 1vh;
+
+}
+
+
+/*---------------------------------- BODY // TROISIEME PARTIE // CARD QUALITIES ---------------------------------- */
+
+.section-title{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle;
+    gap : 1vh ;
+    margin: 5vh;
+    
+}
+
+.cards-quality{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    
+}
+
+
+.panel{
+    margin : 8vh;
+    margin-top : 2vh ;
+    margin-bottom : 0 ;
+    padding: 1vh;
+    width: 30% ;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+    color :rgb(1, 133, 21) ;
+
+}
+
+
+#part-qualities{
+    margin-bottom: 10vh;
+}
+
+
+/*----------------------------BODY // QUATRIEME PARTIE // PORTFOLIO ------------------------*/
+
+
+.inktober{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vw ;
+    padding: 1vh;
+    padding-right: 2vh ;
+
+}
+
+.img-container-inktober{
+    margin : 2vh;
+    padding: 1vh;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}   
+
+.canva-top{
+    z-index: 50;
+}
+
+
+.image-portfolio{
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease, z-index 0s; /* smooth movement */
+
+
+}
+
+
+.image-portfolio:hover{
+    transform: translateY(-450px);
+
+}
+
+.blender-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5vw ;
+    padding: 1vh;
+    gap : 5px ;
+
+}
+
+
+.image-container-blender{
+    display: contents;
+    align-items: center;
+    padding: 3vh;
+    width: 500px;
+    height: 500px;
+    
+}
+
+.image-portfolio-blender{
+    width: 20%;
+    height: auto;
+    
+}
+
+.image-portfolio-blender:hover{
+    transform: scale(1.4);
+}
+
+
+
+.image-container-game{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 500px;
+    height: 300px ;
+    position: relative;
+    
+}
+
+
+
+.image-portfolio-game{
+    position: absolute;
+    width: 100%;
+    height: auto;
+
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease, z-index 0s; /* smooth movement */
+
+
+}
+
+
+.image-portfolio-game:hover{
+    transform: translateY(-225px);
+
+}
+
+
+/* ---------------------------- FOOTER // CINQUIEME PARTIE ------------------------------- */
+
+footer{
+    background-color: rgba(0, 0, 0, 0.322);
+
+}
+
+.top-part{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    padding: 1px ;   
+    margin-right: 3vh;
+    margin-left: 3vh; 
+}
+
+.links{
+    display: flex;
+    align-content : space-evenly;
+    left: auto;
+}
+
+
+
+
+
+/* ---------------------------------------- CLASS GENERIQUE ---------------------------------*/
+
+.middle{
+    text-align: center;
+}
+
+.espace{
+letter-spacing: 10px;
+
+}
+
+.sous-titre{
+
+    font-size: 3rem;
+    color: rgb(85, 192, 101);
+}
+
+.background-white{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.border-green{
+    border: 3px solid rgb(94, 255, 0);
+    border-radius : 1vh;
+}
+
+.dark-green{
+    color: rgb(15, 99, 27) ;
+}
+
+
+.marge{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.big{
+    font-size: larger;
+}
+
+
+.error {
+    font-size: 1.5rem;
+    color: red;
+    
+}
+
+.invis {
+    display: none;
+}
+
+.animationLinear{
+    animation-timing-function : linear;
+}
+
+
+.line {
+    border: 2px solid rgb(94, 255, 0);
+    border-radius : 1vh;
+    margin-left : 4vh;
+    margin-right: 4vh;
+}
+
+
+/* --------------------------------------- ANIMATION BASIQUE ---------------------------- */
+
+@keyframes wheelHueColor {
+    from, to  { color: rgb(57, 233, 83); }
+    10%      { color: hsl(0, 57%, 61%); }
+    20%      { color: hsl(36, 66%, 57%); }
+    30%      { color: hsl(72, 44%, 57%); }
+    40%      { color: hsl(108, 51%, 54%); }
+    50%      { color: hsl(144, 53%, 51%); }
+    60%      { color: hsl(180, 75%, 35%); }
+    70%      { color: hsl(216, 58%, 57%); }
+    80%      { color: hsl(252, 59%, 61%); }
+    90%      { color: hsl(288, 54%, 58%); }
+}
+
+.rainbow:hover {
+    transform: scale(1.2);
+    animation: wheelHueColor 20s infinite;
+}
+
+.be-rainbow{
+    animation: wheelHueColor 15s infinite ;
+}
+
+@keyframes wheelHueColorBorder {
+    from, to  { border-color: rgb(94, 255, 0); }
+    2%       { border-color: hsl(324, 58%, 64%); }
+    10%      { border-color: hsl(0, 57%, 61%); }
+    20%      { border-color: hsl(36, 66%, 57%); }
+    30%      { border-color: hsl(72, 44%, 57%); }
+    40%      { border-color: hsl(108, 51%, 54%); }
+    50%      { border-color: hsl(144, 53%, 51%); }
+    60%      { border-color: hsl(180, 75%, 35%); }
+    70%      { border-color: hsl(216, 58%, 57%); }
+    80%      { border-color: hsl(252, 59%, 61%); }
+    90%      { border-color: hsl(288, 54%, 58%); }
+}
+
+.rainbow-border:hover {
+    transform: scale(1.1);
+    animation: wheelHueColorBorder 20s infinite;
+}
+
+.be-rainbow-border{
+    animation: wheelHueColorBorder 20s infinite;
+}
+
+
+@keyframes spinRoundRound {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.fun {
+    animation: spinRoundRound 1.90s infinite;
+}
+
+
+@keyframes zoomInZoomOut {
+    0%{transform: scale(1) ;}
+    50%{transform: scale(1.15);}
+    100%{transform: scale(1) ;}
+}
+
+@keyframes slideRight {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(70vw);
+  }
+}
+
+@keyframes slideLeft {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-70vw);
+  }
+}
+
+/* ----------------------------CONTACT.HTML // DEUXIEME PAGE --------------------------*/
+
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+    gap: 10px;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
+    font-size: 1.5rem;
+
+}
+
+.informations{
+    width: 30%;
+    height: auto ;
+    padding: 4vh;
+    gap: 5px;
+}
+
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: fit-content ;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------ REMARQUE ---------------------------*/
+
+/* on peut faire double class preciser le css en metan un point netrele nom des deux classe
+avec un espace on dit ce qui est class text-blue, que les paragraphe. */
+
+/*visibility: hidden;*/ /* peu pratique car il est considérer comme un object alors que pas visible */
